@@ -7,4 +7,8 @@ body {
 	background-size: cover;
 }
 
-/*==========================BACKGROUND_IMAGE================================*/
+/*==========================HEADER==========================================*/
+.headerSection { background-color: rgba(41, 38, 38, 0.52); width: 30%; }
+.header h1 { color: #15A7FA; }
+/*==========================HEADER_NAV_BAR==================================*/
+.header .navbar .nav > li { float: left; }
