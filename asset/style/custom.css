@@ -12,7 +12,7 @@ body {
 .headerSection .header .header h1 { color: #15A7FA; }
 /*==========================HEADER_NAV_BAR==================================*/
 .header .navbar .nav > li { float: left; }
-
+.header .navbar { left: 27%; margin: 0px 0 -8px 0; }
 /*==========================CONTENT=========================================*/
 .contentSection { height: 100%; width: 100%; }
 
