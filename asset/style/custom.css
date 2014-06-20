@@ -16,7 +16,14 @@ body {
 /*==========================CONTENT=========================================*/
 .contentSection { height: 100%; width: 100%; }
 
-.contentSection .content { background-color: rgba(0, 0, 0, 0.78); padding: 15px; }
+.contentSection .content { 
+	background-color: rgba(0, 0, 0, 0.78); 
+	border-color:#009;
+	border-radius:5px;
+	border-style:outset;
+	border-width:medium;
+	padding: 15px; 
+}
 
 .contentSection .content .scrollContent{ 
 	color: ivory;
