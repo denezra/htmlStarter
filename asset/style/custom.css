@@ -9,6 +9,18 @@ body {
 
 /*==========================HEADER==========================================*/
 .headerSection { background-color: rgba(41, 38, 38, 0.52); width: 30%; }
-.header h1 { color: #15A7FA; }
+.headerSection .header .header h1 { color: #15A7FA; }
 /*==========================HEADER_NAV_BAR==================================*/
 .header .navbar .nav > li { float: left; }
+
+/*==========================CONTENT=========================================*/
+.contentSection { height: 100%; width: 100%; }
+
+.contentSection .content { background-color: rgba(0, 0, 0, 0.78); padding: 15px; }
+
+.contentSection .content .scrollContent{ 
+	color: ivory;
+	overflow: auto;
+	position: relative;
+	height: 400px;
+}
