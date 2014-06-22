@@ -4,7 +4,7 @@ jQuery(function($) {
 	var files = {
 		extension	: '.html',
 		pageFolder	: 'page/',
-		path			: '/asset/html/'
+		path		: '/asset/html/'
 	};
 	//Window load
 	$(window).load(function(){
@@ -12,6 +12,8 @@ jQuery(function($) {
 		$('section.headerSection > div').load(files.path + 'header' + files.extension);
 		//Content div load
 		$('section.contentSection > div').load(files.path + files.pageFolder + 'home' + files.extension);
+		//Footer div load
+		$('section.footerSection > div').load(files.path + 'footer' + files.extension);
 	});
 
 });

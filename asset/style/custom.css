@@ -1,23 +1,26 @@
+/*==========================GLOBAL==========================================*/
+body {
+  font-family: 'Oswald', Oswald, sans-serif;
+}
+a { color: ivory;}
+
 /*==========================BACKGROUND_IMAGE================================*/
 body { 
-	background: url('/asset/image/bgImage.jpg') no-repeat center center fixed; 
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-webkit-background-size: cover;
-	background-size: cover;
+	background-color: cornsilk;
 }
 
 /*==========================HEADER==========================================*/
-.headerSection { background-color: rgba(41, 38, 38, 0.52); width: 30%; }
-.headerSection .header .header h1 { color: #15A7FA; }
+.headerSection { background-color: cadetblue; width: 23%; }
+.headerSection .header .header h1 { color: ivory; }
 /*==========================HEADER_NAV_BAR==================================*/
 .header .navbar .nav > li { float: left; }
-.header .navbar { left: 27%; margin: 0px 0 -8px 0; }
+.header .navbar { color: ivory; left: 35%; margin: 0px 0 -8px 0; }
+
 /*==========================CONTENT=========================================*/
 .contentSection { height: 100%; width: 100%; }
 
 .contentSection .content { 
-	background-color: rgba(0, 0, 0, 0.78); 
+	background-color: cadetblue;
 	border-color:#009;
 	border-radius:5px;
 	border-style:outset;
@@ -25,9 +28,87 @@ body {
 	padding: 15px; 
 }
 
-.contentSection .content .scrollContent{ 
-	color: ivory;
-	overflow: auto;
-	position: relative;
-	height: 400px;
+.contentSection .content .scrollContent,.pageContent{ 
+	color: ivory; 
+	overflow: hidden; 
+	position: relative; 
+}
+
+/* Prevent the slideshow from flashing on load */
+.galleryContent > .container > #slides {
+  display: none
+}
+
+/* Center the slideshow */
+.galleryContent > .container {
+  margin: 0 auto
+}
+
+/* Show active item in the pagination */
+.galleryContent > .slidesjs-pagination .active {
+  color:red;
+}
+
+
+/*==========================FOOTER==========================================*/
+.footerSection { 
+	background-color: cadetblue; 
+	bottom: 0%;  
+	left: 71%; 
+	position: absolute;
+	width: 21%;}
+.footer .navbar .nav > li { float: left; }
+.footer .navbar { color: ivory; left: 0%; margin: 0; }
+
+
+
+/*==========================CSS MEDIA QUERIES===============================*/
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+	.contentSection .content .scrollContent,.pageContent{ 
+		height: 400px;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+	.contentSection .content .scrollContent,.pageContent{ 
+		height: 780px;
+	}
+}
+
+/* For tablets & smart phones */
+@media (max-width: 767px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .galleryContent > .container {
+    width: auto
+  }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+  .galleryContent > .container {
+    width: auto
+  }
+}
+
+/* For smaller displays like laptops */
+@media (min-width: 768px) and (max-width: 979px) {
+  .galleryContent > .container {
+    width: 724px
+  }
+}
+
+/* For larger displays */
+@media (min-width: 1200px) {
+  .galleryContent > .container {
+    width: 1170px
+  }
 }
